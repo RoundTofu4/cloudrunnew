@@ -5,7 +5,7 @@ const userRoutes = require('./routes/userRoutes');
 const db = require('./config/db');
 
 const app = express();
-const port = 3000;
+const port = 8080;
 
 app.use(bodyParser.json());
 app.use('/auth', authRoutes);
