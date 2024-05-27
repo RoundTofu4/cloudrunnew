@@ -2,9 +2,9 @@ const jwt = require('jsonwebtoken');
 const secret = 'jwt'; // Ganti dengan secret key Anda
 
 const authMiddleware = (req, res, next) => {
-    const authheader = req.headers['authorization'];
+    const authHeader = req.headers['authorization'];
 
-    if (!authheader) {
+    if (!authHeader) {
         return res.status(403).send({ message: 'No token provided.' });
     }
 
