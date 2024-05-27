@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const secret = 'your_jwt_secret'; // Ganti dengan secret key Anda
+const secret = 'jwt'; // Ganti dengan secret key Anda
 
 const authMiddleware = (req, res, next) => {
     const token = req.headers['authorization'];

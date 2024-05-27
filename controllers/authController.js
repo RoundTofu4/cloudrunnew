@@ -1,7 +1,7 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../models/userModel');
-const secret = 'your_jwt_secret'; // Ganti dengan secret key Anda
+const secret = 'jwt'; // Ganti dengan secret key Anda
 
 const register = (req, res) => {
     const { username, password } = req.body;
